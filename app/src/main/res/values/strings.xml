@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Teorema de Pitagoras</string>
+    <string name="cin_valores"><font size="6">Introducir valor</font></string>
+</resources>

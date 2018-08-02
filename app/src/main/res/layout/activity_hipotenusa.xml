@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Stefano.Mazzuka.Teorema.de.Pitagoras.ActivityHipotenusa">
+
+    <TextView
+        android:id="@+id/textViewCatetoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:text="Valor del cateto A:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <TextView
+        android:id="@+id/textViewCatetoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewCatetoA"
+        android:layout_below="@+id/textViewCatetoA"
+        android:layout_marginTop="28dp"
+        android:text="Valor del cateto B:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <TextView
+        android:id="@+id/textViewHipotenusa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewCatetoB"
+        android:layout_below="@+id/editTextCatetoB"
+        android:layout_marginTop="20dp"
+        android:text="Valor de la Hipotenusa:"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/triangulo_hipotenusa"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewHipotenusa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Calcular"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <EditText
+        android:id="@+id/editTextCatetoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCatetoA"
+        android:layout_alignBottom="@+id/textViewCatetoA"
+        android:layout_toEndOf="@+id/textViewCatetoA"
+        android:ems="10"
+        android:hint="@string/cin_valores"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="315dp"
+        android:layout_alignEnd="@+id/editTextCatetoB" />
+
+    <EditText
+        android:id="@+id/editTextCatetoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCatetoB"
+        android:layout_alignBottom="@+id/textViewCatetoB"
+        android:layout_toEndOf="@+id/textViewCatetoB"
+        android:ems="10"
+        android:hint="@string/cin_valores"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="354dp"
+        android:layout_alignEnd="@+id/imageView3" />
+
+</android.widget.RelativeLayout>
